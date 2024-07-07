@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.container-fluid {
+  width: 100%;
+  background: #272B33;
+  padding: 50px 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .container {
+  width: 1200px;
+  margin: auto;
+} */
+
+.col-6 {
+  width: calc(50% - 10px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#Link_Rick {
+  font-size: 26px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+#seen {
+  color: #9E9E9E;
+}
+
+#Link_Seen {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#know {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dis-flex {
+  display: flex;
+}
+
+#set {
+  padding: 0px 20px;
+  transition: 0.3s;
+}
+
+.card {
+  background: #3C3E44;
+  border-radius: 5px;
+}
+
+.dis-flex img {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: var(--bs-card-inner-border-radius);
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 5px;
+}
+
+.font-size {
+  font-size: 80px;
+}
+
+#set a:hover {
+  color: orange;
+}
+
+
+@media (max-width:400px) {
+  .d-flex{
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .d-flex .card-img-top{
+    width: 100% !important;
+  }
+
+  .rick{
+    font-size: 28px;
+    padding: 30px 15px !important;
   }
 }
